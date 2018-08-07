@@ -1,6 +1,9 @@
 # Config file and output
 config.ini
 
+# Project files
+.idea
+
 # Byte-compiled / optimized / DLL files 
 __pycache__/ 
 *.py[cod]
