@@ -11,7 +11,10 @@ def get_movie_file()-> str:
     :return: filename
     """
     Tk().withdraw()
-    return filedialog.askopenfilename(title='Select Movie File')
+    movie_file = filedialog.askopenfilename(title='Select Movie File')
+    if not movie_file:
+        raise FileNotFoundError
+    return movie_file
 
 
 def get_user_agent()-> str:
